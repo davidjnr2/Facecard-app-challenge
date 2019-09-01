@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Mini App</title>  
+  </head>
+  <body>
+    <!-- DIV to display a shopping cart and total figure the user is trying to pay on the app  -->
+    <div data-cart-info>
+      <h1 class= "mdc-typography--headline4"> 
+        <span class="material-icons">shopping_cart</span> 
+        <span data-bill></span> 
+      </h1> 
+    </div>
+    
+    <!-- DIV that for styling with the look and feel of an actual credit card! -->
+    <div data-credit-card class= "mdc-card" class="mdc-card--outlined"> 
+      
+      <!-- DIV to display the credit card type, based on the series of numbers entered by the user -->
+      <div class= "mdc-card__primary-action">
+        <img src= "https://placehold.it/120x60.png?text=Card" alt= "credit-card-type" data-card-type/>
+		
+        <!-- DIV for entering the card holder's name -->
+        <div data-cc-digits>
+          <input type="text"  size="4" placeholder="----" >
+          <input type="text"  size="4" placeholder="----">
+          <input type="text"  size="4" placeholder="----">
+          <input type="text"  size="4" placeholder="----">               
+        </div>
+     <!-- DIV for styling Name and Surname section -->
+        <div data-cc-info>
+          <input type="text" size="20" placeholder="Name Surname">
+          <input type="text" size="6" placeholder="MM/YY">
+        </div>
+       </div>
+    </div>
+  	<!--user enters details of the card and clicks on this button -->
+    <button data-pay-btn class="mdc-button">Pay &amp; Checkout Now</button>
+
+  </body>
+</html>
