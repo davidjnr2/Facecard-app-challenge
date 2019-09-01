@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Facecard App Challenge by Andela</title>    
+  </head>
+  <body>    
+    <!-- your HTML goes here -->
+	<div data-cart-info>
+		<h1 class = "mdc-typography--headline4">
+			<span class="material-icons">shopping_cart</span>
+			<span data-bill></span>
+		</h1>
+	</div>
+	<div data-credit-card class="mdc-card" class="mdc-class--outlined">
+		<div class="mdc-card__primary-action">
+			<img src="https://placehold.it/120x60.png?text=card" data-card-type/>
+			<div data-cc-digits>
+				<input type="text" maxlength="4" size="4" placeholder="----">
+				<input type="text" maxlength="4" size="4" placeholder="----">
+				<input type="text" maxlength="4" size="4" placeholder="----">
+				<input type="text" maxlength="4" size="4" placeholder="----">
+			</div>
+			<div data-cc-info>
+				<input type="text" maxlength="20" size="20" placeholder="Name Surname">
+				<input type="text" maxlength="5" size="5" placeholder="MM/YY">
+			</div>
+		</div>
+	</div>
+	<div card-number-validation></div>
+    <button class="mdc-button" data-pay-btn>Pay Now</button>
+  </body>
+</html>
